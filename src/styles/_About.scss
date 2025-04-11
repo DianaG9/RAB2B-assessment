@@ -1,0 +1,46 @@
+.about {
+    padding: 4rem 1.5rem;
+    color: var(--main-about-text-color);
+    line-height: 1.6;
+    font-size: 1.1rem;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--main-about-text-color);
+    }
+  
+    .about_description {
+      max-width: 800px;
+      margin: 0 auto;
+  
+      h5 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--main-about-text-color);
+      }
+  
+      p {
+        margin-bottom: 1.2rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 3rem 1rem;
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .about_description {
+        h5 {
+          font-size: 1.2rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }

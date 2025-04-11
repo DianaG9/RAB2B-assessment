@@ -1,0 +1,51 @@
+.navbar {
+  background: var(--main-nav-color);
+  padding: 1rem 2rem;
+
+  &__logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 0;
+
+    .nav-item {
+      list-style: none;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__link {
+    color: var(--main-nav-link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+
+    &.active {
+      font-weight: bold;
+      color: var(--main-nav-link-active-color);
+    }
+
+    &:hover {
+      color: var(--main-nav-link-hover-color);
+    }
+  }
+
+  &__toggle {
+    border: none;
+    background: none;
+    padding: 0.25rem 0.5rem;
+  }
+}

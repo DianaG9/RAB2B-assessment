@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Dulce Tentación",
+        "image": "/img/web-1.jpg",
+        "description": "This project was developed by Diana Gómez, check my portfolio here:",
+        "link": "https://dialgoav.github.io/DianaGomez/"
+    },
+    {
+        "title": "Molcajete Studios",
+        "image": "/img/web-2.png",
+        "description": "This project was developed by Diana Gómez, check my portfolio here:",
+        "link": "https://dialgoav.github.io/DianaGomez/"
+    },
+    {
+        "title": "The Music Blog",
+        "image": "/img/web-3.png",
+        "description": "This project was developed by Diana Gómez, check my portfolio here:",
+        "link": "https://dialgoav.github.io/DianaGomez/"
+    }
+]

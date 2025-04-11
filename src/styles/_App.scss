@@ -1,0 +1,172 @@
+@use "Navbar" as *;
+@use "Footer" as *;
+@use "ThemeToggle" as *;
+@use 'Projects' as *;
+@use 'About' as *;
+@use 'Portfolio' as *;
+
+:root{
+    //Colors
+    --white:#F4F4ED;
+    --dark-white:#f0f0f0;
+    --platinum:#D9D9D9;
+    --grey:#9DA9A0;
+    --dark-grey:#506C64;
+    --light-blue:#C2DFE3;
+    --blue:#7CDEDC;
+    --dark-blue:#677CE7;
+    --light-purple:#F6E4F6;
+    --dark-purple: #533677;
+    --light-pink: #F4D8CD;
+    --pink:#EC5F9B;
+    --dark-pink: #d25578;
+    --tangerine:#F1AB86;
+    --peach:#F7DBA7;
+    --green:#065143;
+    --dark-green:#223127;
+    --black: #0A0903;
+    //Gradients
+    --gradient-purple: linear-gradient(to right, #677CE7 , #533677);
+    --gradient-blue: linear-gradient(to right, #C2DFE3 , #677CE7);
+    --gradient-pink: linear-gradient(to right, #f177ac , #d25578);
+    --gradient-grey: linear-gradient(to right, #D9D9D9 , #9DA9A0);
+
+
+    //Main
+    --main-background-color: var(--gradient-pink); 
+    //Main_Home_Canvas
+    --main-closed-laptop-color: var(--gradient-pink) ;
+    --main-opened-laptop-color: var(--gradient-purple);
+    --main-canvas-title-color: var(--white);
+    --main-canvas-link-color: var(--white);
+    //Main_NavBar
+    --main-nav-color: var(--gradient-pink);
+    //Main_NavBar_Toogle
+    --main-toggle-color: var(--gradient-purple);
+    --main-switch-color: var(--light-blue);
+    --main-icon-sun-color: var(--tangerine);
+    --main-icon-moon-color: var(--dark-blue);
+    //Main_Footer
+    --main-footer-color: var(--gradient-pink);
+    //Main_Footer_Icons
+    --main-footer-icons-color: var(--white);
+    --main-footer-icon-hover-color: var(--dark-purple);
+    //Main-Portfolio-
+    --main-portfolio-color:var(--white);
+    //Main-Portfolio-Carousel
+    --main-card-text-color:var(--black);
+    --main-card-back-color:var(--gradient-purple);
+    --main-card-button-color:var(--pink);
+    --main-card-button-hover-color:var(--dark-purple);
+    --main-carousel-controls-color:var(--dark-blue);
+    --main-carousel-controls-hover-color:var(--dark-purple);
+    //About
+    ---main-about-text-color:var(--black);
+
+    }
+        
+    body {
+        background: var(--main-background-color);
+    }
+    
+    .container {
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        @media (max-width: 479px){
+            max-width: 300px;
+        }
+
+        @media (min-width: 480px) and (max-width: 767px) {
+            max-width: 400px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px){
+            max-width: 600px;
+        }
+
+        @media (min-width: 1280px){
+            max-width: 1200px;
+        }
+    }
+
+    .container_page {
+        min-height: 80vh;
+        min-height: 80dvh;
+    }
+    
+    section{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .navbar{
+        .nav-item{
+            color: var(--white);
+            &.hover{
+                color:green;
+            }
+        }
+        .nav-link{
+            color: var(--white);
+            &.active{
+                color:var(--dark-purple);
+            }
+            &.hover{
+                color:red;
+            }
+        }
+        .navbar-brand{
+            color: var(--white);
+        }
+    }
+
+//STYLES FOR DARK MODE
+    body.dark{
+        --main-background-color: var(--black);
+
+        .navbar{
+            --main-nav-color: var(--black);
+            --main-toggle-color: var(--light-pink);
+            --main-switch-color: var(--dark-blue);
+
+
+                .nav-item{
+                    color: var(--white);
+                    &.hover{
+                        color:green;
+                    }
+                }
+                .nav-link{
+                    color: var(--white);
+                    &.active{
+                        color:var(--grey);
+                    }
+                .navbar-brand{
+                    color: var(--white);
+                }
+            }
+        }
+
+        .canvas_section {
+            --main-opened-laptop-color: var(--gradient-purple);
+            --main-closed-laptop-color: var(--main-background-color);
+            h1{
+                color: var(--white);
+            }
+        }
+
+        .projects{
+            --main-card-back-color:var(--gradient-grey);
+        }
+
+        .footer{
+            --main-footer-color: var(--gradient-purple);
+            --main-footer-icon-hover-color: var(--dark-pink);
+        }
+
+        .about{
+            --main-about-text-color:var(--white);
+        }
+    }

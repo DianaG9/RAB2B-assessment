@@ -1,12 +1,12 @@
-# React + Vite
+Hi team in RAB2B! 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm Diana and this is my assessment for the Front End Developer role position. I'm really excited about the role and wanted to showcase big part of my abilities.
 
-Currently, two official plugins are available:
+To run the project you'll need to install the following: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+sass
+react-router-dom
+--save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome  @fortawesome/free-brands-svg-icons 
+three @react-three/fiber @react-three/drei
+uuid
+bootstrap
