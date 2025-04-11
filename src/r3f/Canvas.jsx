@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber'
 import Scene from './Scene'
 import { DarkMode } from '../features/DarkMode'
@@ -31,8 +32,8 @@ export default function CanvasContainer() {
         Check the best of <br /> Diana
       </h1>
 
-      <a
-        href="/about"
+      <Link
+        to="/projects"
         rel="noopener noreferrer"
         className="canvas_section__link"
         style={{
@@ -51,7 +52,7 @@ export default function CanvasContainer() {
         }}
       >
         Check out my portfolio →
-      </a>
+      </Link>
 
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <pointLight
