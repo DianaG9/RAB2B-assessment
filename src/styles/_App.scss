@@ -4,15 +4,20 @@
 @use 'Projects' as *;
 @use 'About' as *;
 @use 'Portfolio' as *;
+@use 'Modal' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
 
 :root{
     //Colors
     --white:#F4F4ED;
-    --dark-white:#f0f0f0;
+    
+    --dark-white:#F5F1E3;
     --platinum:#D9D9D9;
     --grey:#9DA9A0;
     --dark-grey:#506C64;
-    --light-blue:#C2DFE3;
+    --light-blue:#A9BCD0;
     --blue:#7CDEDC;
     --dark-blue:#677CE7;
     --light-purple:#F6E4F6;
@@ -24,7 +29,7 @@
     --peach:#F7DBA7;
     --green:#065143;
     --dark-green:#223127;
-    --black: #0A0903;
+    --black: #1d1d1f;
     //Gradients
     --gradient-purple: linear-gradient(to right, #677CE7 , #533677);
     --gradient-blue: linear-gradient(to right, #C2DFE3 , #677CE7);
@@ -41,11 +46,17 @@
     --main-canvas-link-color: var(--white);
     //Main_NavBar
     --main-nav-color: var(--gradient-pink);
+    --main-nav-link-color: var(--white);
+    --main-nav-link-active-color: var(--dark-purple);
+    --main-nav-link-hover-color:#C5E0D8;
     //Main_NavBar_Toogle
     --main-toggle-color: var(--gradient-purple);
     --main-switch-color: var(--light-blue);
     --main-icon-sun-color: var(--tangerine);
-    --main-icon-moon-color: var(--dark-blue);
+    --main-icon-moon-color: var(--dark-white);
+    //Main_NavBar_Modal
+    --main-modal-color: var(--dark-purple);
+    --main-modal-hover-color: var(--dark-white);
     //Main_Footer
     --main-footer-color: var(--gradient-pink);
     //Main_Footer_Icons
@@ -54,7 +65,7 @@
     //Main-Portfolio-
     --main-portfolio-color:var(--white);
     //Main-Portfolio-Carousel
-    --main-card-text-color:var(--black);
+    --main-card-text-color:var(--dark-white);
     --main-card-back-color:var(--gradient-purple);
     --main-card-button-color:var(--pink);
     --main-card-button-hover-color:var(--dark-purple);
@@ -62,11 +73,11 @@
     --main-carousel-controls-hover-color:var(--dark-purple);
     //About
     ---main-about-text-color:var(--black);
-
-    }
+}
         
     body {
         background: var(--main-background-color);
+        font-family: "Lato", sans-serif;
     }
     
     .container {
@@ -101,52 +112,18 @@
         padding: 0 1rem;
     }
 
-    .navbar{
-        .nav-item{
-            color: var(--white);
-            &.hover{
-                color:green;
-            }
-        }
-        .nav-link{
-            color: var(--white);
-            &.active{
-                color:var(--dark-purple);
-            }
-            &.hover{
-                color:red;
-            }
-        }
-        .navbar-brand{
-            color: var(--white);
-        }
-    }
-
 //STYLES FOR DARK MODE
     body.dark{
         --main-background-color: var(--black);
 
         .navbar{
             --main-nav-color: var(--black);
-            --main-toggle-color: var(--light-pink);
+            --main-toggle-color: var(--pink);
             --main-switch-color: var(--dark-blue);
-
-
-                .nav-item{
-                    color: var(--white);
-                    &.hover{
-                        color:green;
-                    }
-                }
-                .nav-link{
-                    color: var(--white);
-                    &.active{
-                        color:var(--grey);
-                    }
-                .navbar-brand{
-                    color: var(--white);
-                }
-            }
+            --main-nav-link-hover-color:var(--light-blue);
+            --main-nav-link-active-color:var(--pink);
+            --main-modal-color: var(--dark-pink);
+            --main-modal-hover-color: var(--light-blue);
         }
 
         .canvas_section {
@@ -159,6 +136,7 @@
 
         .projects{
             --main-card-back-color:var(--gradient-grey);
+            --main-card-text-color:var(--black);
         }
 
         .footer{

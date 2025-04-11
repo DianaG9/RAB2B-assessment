@@ -27,9 +27,10 @@ export default function CanvasContainer() {
           opacity: open ? 0 : 1,
           transition: 'opacity 0.5s ease, transform 0.5s ease',
           zIndex: 10,
+          pointerEvents: 'none',
         }}
       >
-        Check the best of <br /> Diana
+        Discover the Best of Diana
       </h1>
 
       <Link
@@ -45,7 +46,6 @@ export default function CanvasContainer() {
           pointerEvents: open ? 'auto' : 'none',
           transition: 'opacity 0.5s ease, transform 0.5s ease',
           zIndex: 10,
-          color: theme === 'dark' ? '#fff' : '#000',
           textDecoration: 'none',
           fontSize: '1.2rem',
           fontWeight: 'bold',

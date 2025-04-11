@@ -3,6 +3,7 @@
 
 
 .canvas_section{  
+    background: red;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -12,7 +13,15 @@
 }
 
 .canvas_section__title {
-    max-width:1200px;
+    color: var(--main-canvas-title-color);
+    text-transform: uppercase;
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
     position: absolute;
@@ -20,17 +29,45 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     font-weight: 400;
-    font-size: 8em;
+    font-size: 8rem;
     letter-spacing: -0.045em;
-    white-space: nowrap;
-    transition: all 0.5s ease;
+    white-space: normal;
+    word-break: break-word; 
     opacity: 1;
 }
 
-@media (max-width: 840px) {
+.canvas_section__link{
+ color: var(--main-canvas-link-color);
+}
+
+@media (max-width: 479px){
     .canvas_section__title{
-        font-weight: "bold";
-        font-size: 2em;
+        font-size: 3em;
     }
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .canvas_section__title{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .canvas_section__title{
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1280px){
+    .canvas_section__title{
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 1280px){
+    .canvas_section__title{
+        font-size: 8rem;
+    }
+}
+
 
