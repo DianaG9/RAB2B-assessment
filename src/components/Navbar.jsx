@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import ThemeToggle from "./ToogleDM";
+import Modal from '../components/Modal';
 
 const Navbar = () => {
     return (
@@ -32,6 +33,7 @@ const Navbar = () => {
                             <NavLink to="/about" className="nav-link">About</NavLink>
                         </li>
                     </ul>
+                    <Modal/>
                     <ThemeToggle />
                 </div>
                 
