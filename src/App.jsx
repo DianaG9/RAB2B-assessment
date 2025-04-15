@@ -9,17 +9,19 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Portfolio/>} />
-        <Route path="/about" element={<About/>} />
-      </Routes>
-      <Footer />
+      <div className="app_container">
+        <Navbar />
+        <main className="main_content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }

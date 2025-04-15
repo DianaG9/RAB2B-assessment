@@ -6,6 +6,7 @@ import Modal from '../components/Modal';
 
 const Navbar = () => {
     return (
+        <header>
         <nav className="navbar navbar-expand-md">
             <div className="container">
                 <Link className="navbar-brand" to="/">DianaG9</Link>
@@ -39,6 +40,7 @@ const Navbar = () => {
                 
             </div>
         </nav>
+        </header>
     );
 };
 

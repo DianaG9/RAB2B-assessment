@@ -39,6 +39,7 @@
 
     //Main
     --main-background-color: var(--gradient-pink); 
+    --main-title-color: var(--dark-purple); 
     //Main_Home_Canvas
     --main-closed-laptop-color: var(--gradient-pink) ;
     --main-opened-laptop-color: var(--gradient-purple);
@@ -74,15 +75,32 @@
     //About
     ---main-about-text-color:var(--black);
 }
-        
-    body {
-        background: var(--main-background-color);
-        font-family: "Lato", sans-serif;
-    }
-    
+
+.app_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_content {
+    flex: 1;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--main-background-color);
+    font-family: "Lato", sans-serif;
+
     .container {
-        margin: 0 auto;
-        padding: 0 1rem;
+    
+        padding:  1rem;
+        
+        h1{
+            color: var(--main-title-color);
+            text-align: center;
+            text-transform: uppercase;
+        }
 
         @media (max-width: 479px){
             max-width: 300px;
@@ -101,20 +119,11 @@
         }
     }
 
-    .container_page {
-        min-height: 80vh;
-        min-height: 80dvh;
-    }
-    
-    section{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
+    //STYLES FOR DARK MODE
 
-//STYLES FOR DARK MODE
-    body.dark{
+    &.dark{
         --main-background-color: var(--black);
+        --main-title-color: var(--light-blue); 
 
         .navbar{
             --main-nav-color: var(--black);
@@ -148,3 +157,8 @@
             --main-about-text-color:var(--white);
         }
     }
+
+}
+
+
+
