@@ -29,7 +29,7 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                         <a
-                            href=""
+                            href="https://x.com/dialgoav9"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Twitter"
