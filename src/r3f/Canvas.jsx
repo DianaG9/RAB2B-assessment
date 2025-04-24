@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber'
 import Scene from './Scene'
 import { DarkMode } from '../features/DarkMode'
-import '..//styles/_Canvas.css'
+import '../styles/_Canvas.css'
 
 export default function CanvasContainer() {
   const [open, setOpen] = useState(false)
